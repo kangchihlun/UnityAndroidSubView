@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;unity-classes.jar&apos; to &apos;layout&apos;&#x0D;&#x0A;- Original project: &apos;smcubeLib&apos;&#x0D;&#x0A;- Destination element: &apos;layout&apos;&#x0D;&#x0A;- Original element: &apos;unity-classes.jar&apos;" description="Copy file" element1="libs/unity-classes.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1425626588472" target="/smcube/res/layout" units="0" version="1.0"/>
+</session>

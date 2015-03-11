@@ -1,0 +1,10 @@
+INDEX VERSION 1.126+C:\Work\AndroidVuforiaSubView\.metadata\.plugins\org.eclipse.jdt.core
+3052238964.index
+411820934.index
+1982698563.index
+1360530570.index
+1941863594.index
+2286572441.index
+4022157155.index
+1234461820.index
+3554096335.index

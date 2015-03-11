@@ -1,0 +1,41 @@
+package com.nma.smcube;
+
+import android.graphics.PixelFormat;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.unity3d.player.UnityPlayer;
+import com.unity3d.player.UnityPlayerActivity;
+//import com.unity3d.player.UnityPlayerActivity;
+
+
+public class MainAcrivity extends UnityPlayerActivity   
+{
+	
+	private UnityPlayer m_UnityPlayer;
+
+	@Override
+    protected void onCreate(Bundle savedInstanceState) 
+	{
+		
+        super.onCreate(savedInstanceState);
+        
+        //Create the UnityPlayer
+        m_UnityPlayer = new UnityPlayer(this);
+        
+        int glesMode = m_UnityPlayer.getSettings().getInt("gles_mode", 1);
+	    boolean trueColor8888 = false;
+	    m_UnityPlayer.init(glesMode, trueColor8888);
+	    
+	    setContentView(R.layout.activity_main);
+	    
+	    // Add the Unity view
+        FrameLayout layout = (FrameLayout) findViewById(R.id.framelayout2);    
+        LayoutParams lp = new LayoutParams (LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+        layout.addView(m_UnityPlayer.getView(), 0, lp);
+        
+	}
+
+}
